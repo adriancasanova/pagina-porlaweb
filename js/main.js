@@ -127,7 +127,7 @@ jQuery(function($) {
 		$.ajax({
 			url: $(this).attr('action'),
 			beforeSend: function(){
-				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Email is sending...</p>').fadeIn() );
+				form.prepend( form_status.html('<p><i class="fa fa-spinner fa-spin"></i> Enviando email...</p>').fadeIn() );
 			}
 		}).done(function(data){
 			form_status.html('<p class="text-success">Gracias por contactarnos. Nos pondremos en contacto lo antes posible.</p>').delay(3000).fadeOut();
